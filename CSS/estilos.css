@@ -1,0 +1,29 @@
+h2 {
+    background-color: black;
+  }
+#rojo {
+    background-color: rgb(94, 15, 15);
+}
+#verde {
+    background-color: green;
+}
+
+#azul {
+    background-color: rgb(196, 196, 230);
+}
+.naranja {
+    background-color: orange;
+}
+#morado {
+    background-color: rgb(206, 171, 206);
+}
+
+.azul1 {
+    background-color: rgb(138, 156, 204);
+}
+#azul2 {
+    background-color: rgb(17, 18, 68);
+}
+
+
+
