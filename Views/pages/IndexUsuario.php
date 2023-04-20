@@ -30,7 +30,7 @@
                     echo "<th>".$dato["nombreUsuario"]."</th>";
                     echo "<th>".$dato["telefonoUsuario"]."</th>";
                     echo "<th>".$dato["direccionUsuario"]."</th>";
-                    echo "<th><a href='EditarUsuario.php?id=".$dato["codigoUsario"]."'>Editar</a></th>";
+                    echo "<th><a href='EditarUsuario.php?id=".$dato["codigoUsuario"]."'>Editar</a></th>";
                     echo "<th><a href='EliminarUsuario.php?id=".$dato["codigoUsuario"]."'>Borrar</a></th>";
                 echo "</tr>";
             }
