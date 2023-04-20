@@ -45,5 +45,12 @@ require_once(dirname(__DIR__)."../Config/database.php");
 
             require_once dirname(__DIR__)."../Views/pages/IndexUsuario.php";
         }
+         
+        public function actualizar(){
+        $usuario = new UsuarioModels();
+        $usuario->actualizar($this->codigo, $this->nombre, $this->telefono, $this->direccion);
+
+        require_once dirname(__DIR__)."../Views/pages/IndexUsuario.php";
+        }
     }
 ?>

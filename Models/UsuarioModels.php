@@ -29,8 +29,10 @@
             }else{
                 return false;
             }
-    }
+         }
 
-    }
-
+         public function actualizar($codigoUsuario, $nombreUsuario, $telefonoUsuario, $direccionUsuario){
+            $resultado = $this->db->query("UPDATE libro SET codigoUsuario='$codigoUsuario', telefonoUsuario='$telefonoUsuario', direccionUsuario='$direccionUsuario'  where codigoUsuario='$codigoUsuario'");
+        }
+}
 ?>
