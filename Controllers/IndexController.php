@@ -44,5 +44,8 @@ require_once("EjemplarController.php");
         
         $objeto = new UsuarioController($_POST['codigoUsuario'], $_POST['nombreUsuario'], $_POST['telefonoUsuario'], $_POST['direccionUsuario'], 'Actualizar');
     }
-
+    else if($opcion == "updatePrestamos"){
+        
+        $objeto = new PrestamoController($_POST['codigoPrestamo'], $_POST['codigoUsuario'], $_POST['codigoEjemplar'], $_POST['fechaPrestamo'], $_POST['fechaDevolucion'], 'guardar');
+    }
 ?>

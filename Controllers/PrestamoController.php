@@ -19,9 +19,11 @@ require_once(dirname(__DIR__)."../Config/database.php");
             $this->codigoEjemplar = $codigoEjemplar;
             $this->fechaPrestamo = $fechaPrestamo;      
             $this->fechaDevolucion = $fechaDevolucion;   
-            if($codigoPrestamo!=""){
+            if($opc=="Actualizar"){
+                // $this->actualizar();
+            }else if($codigoPrestamo!=""){
                 $this->guardar();
-            }
+        }
         }
 
         public function index(){
