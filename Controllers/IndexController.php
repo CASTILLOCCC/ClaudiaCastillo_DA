@@ -40,5 +40,9 @@ require_once("EjemplarController.php");
         
         $objeto = new EjemplarController($_POST['codigoEjemplar'], $_POST['localizacion'], $_POST['codigoLibro'], 'Actualizar');
     }
+    else if($opcion == "updateUsuario"){
+        
+        $objeto = new UsuarioController($_POST['codigoUsuario'], $_POST['nombreUsuario'], $_POST['telefonoUsuario'], $_POST['direccionUsuario'], 'Actualizar');
+    }
 
 ?>

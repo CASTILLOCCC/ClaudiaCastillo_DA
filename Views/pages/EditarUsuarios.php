@@ -17,21 +17,14 @@ require_once(dirname(__DIR__)."../layaut/header.php");
                                         <div class="col-md-10  text-center">
                                         <div class="col-md-12  text-center">
                                         
-                                        <input id="CodigoLibro" name="codigoUsuario" type="text" placeholder="Código del Usuario" class="form-control text-center" >
+                                        <input id="CodigoLibro" name="codigoUsuario" type="text" value="<?php echo $_GET['id'] ?>" class="form-control text-center" >
                                     </div>
                                         
                                             <input id="nombreUsuario" name="nombreUsuario" type="text" placeholder="Nombre Usuario" class="form-control" style >
-                                            <?php
-                                        $info = new UsuarioController("","","","","");
-                                        $data = $info->index();
-                                        echo "<select name='codigoUsuario'>";
-                                        foreach($data["autor"] as $dato){
-                                        echo "<option value='".$dato["codigoUsuario"]."'>".$dato["nombreUsuario"]."</option>";
-                                        };
-                                    ?>
                                         </div>
                                     </div>
                                     <input type="hidden" name="controller" value="usuario">
+                                    <input type="hidden" name="controller" value="updateUsuario">
 
                                   </div>
                                     <div class="form-group">

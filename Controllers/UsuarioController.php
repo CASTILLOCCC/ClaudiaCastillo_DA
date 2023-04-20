@@ -16,9 +16,11 @@ require_once(dirname(__DIR__)."../Config/database.php");
             $this->nombre = $nombre;
             $this->telefono = $telefono;
             $this->direccion = $direccion;         
-            if($codigo!=""){
+            if($opc=="Actualizar"){
+                $this->actualizar();
+            }else if($codigo!=""){
                 $this->guardar();
-            }
+        }
         }
 
         public function index(){
